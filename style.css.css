@@ -1,0 +1,89 @@
+/*style du body*/
+body{
+  font-family: calibri;
+  font-size: intial;
+  font-style: oblique;
+  margin: 0px;
+  padding: 0px;
+}
+/*style du body*/
+/*style des listes*/
+.nav{
+  height: 80px;
+  background-color: #424558 ;
+  width: 100%;
+  color: black;
+}
+.nav > ul{
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+  height: 100%;
+  list-style-position: outside;
+}
+.nav > ul> li {
+  position: relative;
+  width: 80px;
+  height: 380%
+}
+.ssmenu{
+  display: none;
+  color : black;
+  padding-top: 20px;
+  list-style-type: none;
+  list-style-position: inside;
+}
+.nav > ul::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.nav a {
+  display: inline-block;
+  text-decoration: none;
+
+}
+.ssmenu li {
+  border-bottom:1px #CCC;
+}
+.nav > ul > li > a{
+  color:#FFF;
+  padding: 50px;
+  margin-top: 60px;
+}
+/*style des listes*/
+/*menu déroulant*/
+.menu-page1 li a {
+  padding-left: 15px 30px;
+  font-size: 15px;
+  color : black;
+  width: 270px;
+}
+.menu-page1:hover .ssmenu{
+  display: block;
+}
+.menu-page2 li a {
+  padding-left: 15px 30px;
+  font-size: 15px;
+  color : black;
+  width: 270px;
+}
+.menu-page2:hover .ssmenu{
+    display: block;
+}
+.menu-page3 li a{
+  padding-left: 15px 30px;
+  font-size: 15px;
+  color : black;
+  width: 270px;
+}
+.menu-page3:hover .ssmenu{
+  display: block;
+}
+/*menu déroulant*/
+.ttt{
+  text-align: center;
+}

@@ -1,0 +1,22 @@
+<style>
+	body{
+		background-color: #ebf4ec;
+	}
+	h1{
+		text-align: center;
+		color: #edbe17;
+	}
+</style>
+<h1>blog ({{poste|length}} poste) </h1>
+{% for post in poste %}
+	<article>
+		<h4><a href="blog/poste/{{poste.id}}">#{{post.id}} - {{post.title | upper}}</a></h4>
+		<p><h4>{{post.body|truncatewords:3}}</h4></p>
+		<p><a href="blog/poste/{{poste.id}}">Lire la suite</a></p>
+	</article>
+	{% if not forloop.last %}
+	<hr>
+	{% endif%}
+	{% empty %}
+		<p>Sorry no result</p>	
+{% endfor %}
